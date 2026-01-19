@@ -1,0 +1,20 @@
+.TopHeading {
+  font-size: 20px;
+}
+.HeadingTitle {
+  font-weight: 600;
+}
+@media (min-width: 1100px) {
+  .HeadingContent {
+    font-size: 19px;
+    line-height: 29px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+.HeadingContent {
+  font-size: 19px;
+  line-height: 29px;
+  margin: 0 auto;
+  margin-top: 5px;
+}

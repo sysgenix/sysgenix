@@ -1,0 +1,19 @@
+export default function AnimatedLogo() {
+    return (
+        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 634.2 521.3">
+            <path className='origin-bottom opacity-0 group-[.hway-active]:opacity-100 scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.2s] transition-all duration-[1.5s]' fill="#23a8e0" d="M382.7,486.6c-4.2,11.2-8.1,22.8-11.9,34.7h-107.4c-3.6-12.4-7.3-23.9-11.2-34.7h130.5Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.2s] transition-all duration-[1.5s]' fill="#23a8e0" d="M399.3,446.3c-4.7,10.3-9.2,21-13.5,32.2h-136.6c-4.4-11.5-8.9-22.2-13.7-32.2h163.7Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.3s] transition-all duration-[1.5s]' fill="#23a8e0" d="M420,406c-5.5,9.4-10.7,19.3-15.7,29.7h-173.9c-5.4-10.6-11-20.4-16.8-29.7h206.5,0Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.3s] transition-all duration-[1.5s]' fill="#23a8e0" d="M447.3,365.7c-6.7,8.4-13.2,17.5-19.4,27.3h-222.9c-6.5-9.5-13.2-18.5-20.2-27.3h262.5Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.4s] transition-all duration-[1.5s]' fill="#23a8e0" d="M486.8,325.4c-4.9,4.3-9.9,8.9-14.8,13.7-3.8,3.5-7.6,7.2-11.3,11.1H172.1c-3.1-3.7-6.4-7.4-9.6-11.1-5-4.8-9.9-9.4-14.9-13.7h339.1Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.4s] transition-all duration-[1.5s]' fill="#23a8e0" d="M543.7,284.6c-11.5,6.6-23.1,14.1-34.8,22.8H125.3c-11.6-8.6-23.3-16.1-35.2-22.8h453.7Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.3s] transition-all duration-[1.5s]' fill="#23a8e0" d="M306.9,243.4h327c.1.1.2.3.4.4-16.3,6.3-34,13-52.3,21.3H50.6c-16.1-7-32.9-13.4-50.6-19.8.6-.6,1.1-1.3,1.7-1.9h305.2Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.3s] transition-all duration-[1.5s]' fill="#23a8e0" d="M597.3,204.5c5.1,5.4,10.2,10.7,15.3,16.2H22.8c5.1-5.4,10.3-10.8,15.4-16.2h559.1Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.6s] transition-all duration-[1.5s]' fill="#23a8e0" d="M557.5,164.2c5.1,4.9,10.1,9.9,15.1,15H63.2c5.1-5.1,10.2-10,15.4-15h478.9,0Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.6s] transition-all duration-[1.5s]' fill="#23a8e0" d="M513.8,123.9c4.8,4.1,9.5,8.3,14.2,12.5H108.5c4.7-4.2,9.4-8.4,14.1-12.5h391.2Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.7s] transition-all duration-[1.5s]' fill="#23a8e0" d="M463.4,83.6c4.5,3.3,9,6.7,13.4,10.1H159c4.3-3.4,8.6-6.8,12.9-10.1h291.5Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.7s] transition-all duration-[1.5s]' fill="#23a8e0" d="M402.1,43.3c4.3,2.5,8.5,5,12.6,7.6h-196.7c4-2.6,7.9-5.1,11.9-7.6h172.2Z"/>
+            <path className='origin-bottom scale-y-0 group-[.hway-active]:scale-y-100 delay-[.3s] group-[.hway-active]:delay-[.8s] transition-all duration-[1.5s]' fill="#23a8e0" d="M317,0c6.1,2.7,12.1,5.4,18,8.1h-38.5c6.9-2.9,13.7-5.7,20.6-8.1h0Z"/>
+        </svg>
+    );
+};

@@ -1,0 +1,76 @@
+.MobileNavigation {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 62px);
+  justify-content: space-between;
+
+}
+.ScrollContainer {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.NavLink {
+  display: flex;
+  width: 100%;
+  color: #000;
+  padding: 10px 15px;
+  font-weight: 500;
+  background: none;
+  text-align: left;
+}
+
+.Chevron {
+  color: #226cda;
+  transition: transform 0.3s ease;
+}
+
+.ChevronOpen {
+  transform: rotate(180deg);
+}
+
+.MobileDropdown {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transform-origin: top;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; 
+}
+
+.MobileDropdown.Show {
+  max-height: 1000px;
+  opacity: 1;
+  transform: scaleY(1);
+  padding-top: 10px;
+}
+
+.MobileDropdown li a {
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.MobileDropdown li {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.MobileDropdown li .MobileDropdown {
+  margin-left: 10px;
+  background-color: #43c7e819; 
+  border-radius: 8px;
+}
+
+.socialHeading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  margin-top: 10px;
+}
