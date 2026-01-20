@@ -136,7 +136,7 @@ const HeroBanner = () => {
               <button
                 onClick={() => setCurrentSlide(index)}
                 className={`transition-colors duration-300 z-30 cursor-pointer ${
-                  isActive ? "text-[#fc1660]" : "text-gray-500 hover:text-[#ffffff]"
+                  isActive ? "text-[#fc1660]" : "text-white/70 hover:text-[#ffffff]"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               >
