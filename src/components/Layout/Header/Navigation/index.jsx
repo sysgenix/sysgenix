@@ -16,12 +16,12 @@ export default function Navigation({ isFixed }) {
         <Link
             href="tel:+16399980063"
             className={`inline-flex items-center border border-[#fc1660] bg-transparent font-semibold py-2 px-4 tracking-wider cursor-pointer transition-colors duration-300 
-              ${isFixed ? 'text-[#de4b5c]' : 'text-white'} ${isFixed ? 'hover:bg-[#ffffff]' : 'hover:bg-gray-900'}
+              ${isFixed ? 'text-[#fc1660]' : 'text-white'} ${isFixed ? 'hover:bg-[#ffffff]' : 'hover:bg-gray-900'}
             `}
           ><Image src="/images/header/contact.gif" alt='Call - Sysgenix ' width={30} height={30}/>
             +1-639-998-0063
           </Link>
-        <Link href="/contact-us" className="inline-block border border-[#fc1660] bg-[#fc1660] text-white font-semibold py-2 px-4  hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer">Get a Quote</Link>
+        <Link href="/contact-us" className="inline-flex items-center gap-2 border border-[#fc1660] bg-[#fc1660] text-white font-semibold py-2 px-4  hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer"><Image src="/images/header/quote.gif" alt='Call - Sysgenix ' width={25} height={25}/>Get a Quote</Link>
     </nav>
     </>
   );

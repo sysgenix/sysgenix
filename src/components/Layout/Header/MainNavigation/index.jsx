@@ -32,7 +32,7 @@ export default function MainNavigation({ isFixed }) {
               <path
                 d="M6 9L12 15L18 9"
                 stroke="currentColor"
-                strokeWidth="4"
+                strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />

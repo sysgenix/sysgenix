@@ -26,12 +26,12 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-[10px] z-[9999] cursor-pointer right-[50px] bg-black rounded-full shadow-xl ${
+      className={`fixed bottom-[10px] z-[9999] cursor-pointer right-[50px] bg-[up-arrow.gif] rounded-full shadow-xl ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
       
-      <Image src="/images/fixed-img-links/up-arrow.svg" alt="Scroll to top" width={40} height={40} className="" />
+      <Image src="/images/up-arrow.gif" alt="Scroll to top" width={40} height={40} className="" />
     </button>
   );
 };
