@@ -105,7 +105,7 @@ const HeroBanner = () => {
                     href={slide.href}
                     // Added tabIndex to prevent tabbing to invisible buttons
                     tabIndex={isActive ? 0 : -1}
-                    className="inline-block bg-[#de4b5c] text-white font-semibold py-3 px-8 shadow-md hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer"
+                    className="inline-block bg-[#f94a65] text-white font-semibold py-3 px-8 shadow-md hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer"
                   >
                     {slide.buttonText}
                   </Link>

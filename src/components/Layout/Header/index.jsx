@@ -34,7 +34,7 @@ export default function Header() {
         <div className="relative z-10">
           <div className="flex justify-between items-center p-2">
             <div className={styles.logo} >
-              <Link href="/" className="block w-[150px] xl:w-[200px] ml-4">
+              <Link href="/" className="block w-[150px] xl:w-[250px] ml-4">
                 <Image
                 src={isFixed 
                     ? "/images/logo/logo-sys.png"
