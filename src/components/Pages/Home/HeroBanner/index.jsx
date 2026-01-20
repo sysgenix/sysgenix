@@ -52,7 +52,7 @@ const HeroBanner = () => {
   }, [currentSlide, slideLength]);
 
   return (
-    <section className="relative w-full h-[600px] md:h-[700px] lg:h-[100vh] min-h-[600px] overflow-hidden bg-gray-100 font-sans">
+    <section className="relative w-full h-[600px] md:h-[700px] lg:h-[100vh] min-h-[600px] overflow-hidden  bg-gray-100 font-sans">
       {sliderData.map((slide, index) => {
         const isActive = index === currentSlide;
         
@@ -72,13 +72,26 @@ const HeroBanner = () => {
             aria-hidden={!isActive}
           >
             {/* Image Layer */}
-            <div className="absolute top-0 left-0 w-full h-full">
+            {/* <div className="absolute top-0 left-0 w-full h-full">
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
                 priority={index === 0}
                 className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/10"></div>
+            </div> */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                priority={index === 0}
+                // CHANGE 2: Added zoom animation classes
+                // - transition-transform duration-[7000ms] ease-in-out: Sets a slow, smooth transition for transforms.
+                // - scale-110 vs scale-100: Zooms in when active, resets when inactive.
+                className={`object-cover object-center transition-transform duration-[7000ms] ease-in-out ${isActive ? "scale-110" : "scale-100"}`}
               />
               <div className="absolute inset-0 bg-black/10"></div>
             </div>

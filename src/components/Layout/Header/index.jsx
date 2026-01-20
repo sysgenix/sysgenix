@@ -47,7 +47,7 @@ export default function Header() {
               </Link>
             </div>
             <div className={`${styles.Navbar} ml-auto`}>
-              <Navigation />
+              <Navigation isFixed={isFixed} />
             </div>
             <button
               className={`${styles.openOffcanvasNav} ml-auto`}
