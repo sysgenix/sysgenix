@@ -32,7 +32,7 @@ export default function Header() {
     <header className="relative">
       <div className={`${styles.navigation} ${isFixed ? styles.navigationfix : ''}`}>
         <div className="relative z-10">
-          <div className="flex justify-between items-center p-2">
+          <div className="flex justify-between items-center px-2 py-4">
             <div className={styles.logo} >
               <Link href="/" className="block w-[150px] xl:w-[250px] ml-4">
                 <Image
@@ -41,7 +41,7 @@ export default function Header() {
                     : "/images/logo/logo-sys-white.png"
                   }                 
                   alt="Sysgenix Technologies"
-                  width={200}
+                  width={250}
                   height={100}
                 />
               </Link>
