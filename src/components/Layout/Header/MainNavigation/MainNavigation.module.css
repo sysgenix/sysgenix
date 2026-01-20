@@ -55,7 +55,11 @@
   color: var(--main-color);
   background: var(--light-bg-color);
 }
-
+.ServicesLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 /* Responsive text sizes */
 @media (max-width: 1280px) {
   .NavLink {
