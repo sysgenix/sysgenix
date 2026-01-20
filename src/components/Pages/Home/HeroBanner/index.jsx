@@ -91,12 +91,12 @@ const HeroBanner = () => {
                    The classes remain identical so the look doesn't change 
                 */}
                 <TitleTag 
-                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-[#1e3a52] leading-tight mb-6 ${styles.textEnterAnimation} ${styles.delay500}`}
+                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-black/85 leading-tight mb-6 ${styles.textEnterAnimation} ${styles.delay500}`}
                 >
                   {slide.title}
                 </TitleTag>
 
-                <p className={`text-lg text-gray-600 mb-10 md:pr-20 ${styles.textEnterAnimation} ${styles.delay700}`}>
+                <p className={`text-lg text-black mb-10 md:pr-20 ${styles.textEnterAnimation} ${styles.delay700}`}>
                   {slide.description}
                 </p>
 
@@ -136,7 +136,7 @@ const HeroBanner = () => {
               <button
                 onClick={() => setCurrentSlide(index)}
                 className={`transition-colors duration-300 z-30 cursor-pointer ${
-                  isActive ? "text-[#fc1660]" : "text-[#124fa3]/70 hover:text-[#ffffff]"
+                  isActive ? "text-[#fc1660]" : "text-gray-500 hover:text-[#ffffff]"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               >
@@ -150,7 +150,7 @@ const HeroBanner = () => {
         })}
       </div>
       
-      <div className="absolute inset-0 z-0 pointer-events-none container mx-auto border-l border-r border-gray-200/30 h-full"></div>
+      {/* <div className="absolute inset-0 z-0 pointer-events-none container mx-auto border-l border-r border-gray-200/30 h-full"></div> */}
     </section>
   );
 };
