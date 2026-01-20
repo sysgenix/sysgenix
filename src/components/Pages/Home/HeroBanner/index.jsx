@@ -117,6 +117,14 @@ const HeroBanner = () => {
         );
       })}
 
+      <div className={styles.lineAnimated}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
       {/* Pagination Controls */}
       <div className="absolute z-30 bottom-8 md:bottom-12 right-6 md:right-12 flex items-center space-x-2 font-bold text-xl md:text-[50px]">
         {sliderData.map((_, index) => {

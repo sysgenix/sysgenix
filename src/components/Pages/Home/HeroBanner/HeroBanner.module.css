@@ -22,3 +22,43 @@
 .delay500 { animation-delay: 0.3s; }
 .delay700 { animation-delay: 0.6s; }
 .delay900 { animation-delay: 0.9s; }
+
+/* The vertical track (optional: adds a faint static line) */
+.lineAnimated > span {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Very faint guide line */
+  display: block;
+  overflow: hidden; /* Keeps the 'drop' inside the line */
+}
+
+/* The moving "drop" or "meteor" */
+.lineAnimated > span::before {
+  content: "";
+  background-image: linear-gradient(0deg, #e74860, transparent);
+  width: 100%;
+  height: 150px; /* Length of the drop */
+  position: absolute;
+  top: -150px; /* Start above the view */
+  left: 0;
+  /* Using the user's animation settings */
+  animation: lineDrop 7s linear infinite; 
+}
+
+/* Define the drop movement */
+@keyframes lineDrop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 100%; /* Move past the bottom */
+  }
+}
+
+/* Stagger the animations so they don't all fall at once */
+.lineAnimated > span:nth-child(1)::before { animation-delay: 0s; }
+.lineAnimated > span:nth-child(2)::before { animation-delay: 2.5s; }
+.lineAnimated > span:nth-child(3)::before { animation-delay: 5s; }
+.lineAnimated > span:nth-child(4)::before { animation-delay: 1.5s; }
+.lineAnimated > span:nth-child(5)::before { animation-delay: 4s; }
