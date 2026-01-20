@@ -2,9 +2,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Header from "@/components/Layout/Header";
-import FooterNew from "@/components/Layout/FooterNew";
+import Footer from "@/components/Layout/Footer";
 import ScrollToTop from "@/components/Layout/ScrollToTop";
-import Script from "next/script"; 
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,23 +13,13 @@ const poppins = Poppins({
 });
 
 export default function ClientWrapper({ children }: { children: React.ReactNode }) {
-
-  
   return (
-    <html lang="en">
-      <head>
-      
-       
-      </head>
-
+    <html lang="en">  
       <body className={poppins.className} suppressHydrationWarning={true}>
-      
-           <Header />
-        {children}
-        {/* <FooterNew /> */}
+        <Header />
+          {children}
+        {/* <Footer/> */}
         <ScrollToTop />
-       
-       
       </body>
     </html>
   );

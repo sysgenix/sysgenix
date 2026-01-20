@@ -1,0 +1,24 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textEnterAnimation {
+  /* The base duration of the movement */
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0; /* Important: Start invisible */
+}
+
+/* NEW DELAYS: 
+   These align with the 1000ms image transition.
+   0.5s allows the background to be half-faded in before text starts.
+*/
+.delay500 { animation-delay: 0.3s; }
+.delay700 { animation-delay: 0.6s; }
+.delay900 { animation-delay: 0.9s; }

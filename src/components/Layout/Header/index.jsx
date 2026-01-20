@@ -33,7 +33,7 @@ export default function Header() {
       <div className={`${styles.navigation} ${isFixed ? styles.navigationfix : ''}`}>
         <div className="relative z-10">
           <div className="flex justify-between items-center p-2">
-            <div className={styles.logo} data-aos="fade-up">
+            <div className={styles.logo} >
               <Link href="/" className="block w-[150px] xl:w-[200px] ml-4">
                 <Image
                 src={isFixed 
@@ -73,7 +73,7 @@ export default function Header() {
         }}
       >
         <div className={`${styles.OffcanvasNavHeader} flex justify-between items-center py-2 px-4`}>
-          <div data-aos="fade-up">
+          <div>
             <Link href="/" className="block w-[150px] xl:w-[60px]">
               <Image
                 src="/images/logo/logo-sys.png"
