@@ -105,7 +105,7 @@ const HeroBanner = () => {
                     href={slide.href}
                     // Added tabIndex to prevent tabbing to invisible buttons
                     tabIndex={isActive ? 0 : -1}
-                    className="inline-block bg-[#f94a65] text-white font-semibold py-3 px-8 shadow-md hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer"
+                    className="inline-block bg-[#fc1660] text-white font-semibold py-3 px-8 shadow-md hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer"
                   >
                     {slide.buttonText}
                   </Link>
@@ -136,14 +136,14 @@ const HeroBanner = () => {
               <button
                 onClick={() => setCurrentSlide(index)}
                 className={`transition-colors duration-300 z-30 cursor-pointer ${
-                  isActive ? "text-[#de4b5c]" : "text-[#ffffff]/50 hover:text-[#ffffff]"
+                  isActive ? "text-[#fc1660]" : "text-[#124fa3]/70 hover:text-[#ffffff]"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               >
                 {slideNumber}
               </button>
               {index !== slideLength - 1 && (
-                 <span className="text-[#de4b5c] mx-2">-</span>
+                 <span className="text-[#fc1660] mx-2">-</span>
               )}
             </div>
           );
