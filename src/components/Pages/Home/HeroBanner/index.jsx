@@ -8,7 +8,6 @@ import Link from "next/link";
  const sliderData = [
   {
     id: 1,
-    // Suggestion: Use an image of a team coding or a clean workspace with multiple monitors
     image: "/images/home/home-banner/hero-bg1.png", 
     title: "Innovative Web Solutions For Modern Business.",
     description:
@@ -18,7 +17,6 @@ import Link from "next/link";
   },
   {
     id: 2,
-    // Suggestion: Use an image of wireframes, prototypes, or designers pointing at a screen
     image: "/images/home/home-banner/hero-bg2.png", 
     title: "Creative UI/UX Design That Inspires.",
     description:
@@ -28,7 +26,6 @@ import Link from "next/link";
   },
   {
     id: 3,
-    // Suggestion: Use an image representing analytics, graphs, or growth (upward trends)
     image: "/images/home/home-banner/hero-bg3.png", 
     title: "Data-Driven SEO To Maximize Visibility.",
     description:
@@ -82,15 +79,13 @@ const HeroBanner = () => {
               />
               <div className="absolute inset-0 bg-black/10"></div>
             </div> */}
+
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
-                priority={index === 0}
-                // CHANGE 2: Added zoom animation classes
-                // - transition-transform duration-[7000ms] ease-in-out: Sets a slow, smooth transition for transforms.
-                // - scale-110 vs scale-100: Zooms in when active, resets when inactive.
+                priority={index === 0}                
                 className={`object-cover object-center transition-transform duration-[7000ms] ease-in-out ${isActive ? "scale-110" : "scale-100"}`}
               />
               <div className="absolute inset-0 bg-black/10"></div>
@@ -163,7 +158,7 @@ const HeroBanner = () => {
         })}
       </div>
       
-      {/* <div className="absolute inset-0 z-0 pointer-events-none container mx-auto border-l border-r border-gray-200/30 h-full"></div> */}
+      <div className="absolute inset-0 z-0 pointer-events-none container mx-auto border-l border-r border-gray-200/30 h-full"></div>
     </section>
   );
 };

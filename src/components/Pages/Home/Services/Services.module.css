@@ -1,0 +1,112 @@
+/* --- Entrance Animation (Staggered Fade Up) --- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cardAnimate {
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Stagger delays for 8 items */
+.delay100 { animation-delay: 0.1s; }
+.delay200 { animation-delay: 0.2s; }
+.delay300 { animation-delay: 0.3s; }
+.delay400 { animation-delay: 0.4s; }
+.delay500 { animation-delay: 0.5s; }
+.delay600 { animation-delay: 0.6s; }
+.delay700 { animation-delay: 0.7s; }
+.delay800 { animation-delay: 0.8s; }
+
+/* --- THE MAIN CARD STYLES --- */
+.serviceCard {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* Keeps the fill inside the rounded corners */
+  transition: all 0.4s ease-in-out;
+  background: white;
+}
+
+/* The "Fill" Effect Layer */
+.serviceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Brand Gradient */
+  background: linear-gradient(135deg, #fc1660 0%, #ff5e62 100%);
+  z-index: -1; /* Sit behind text */
+  
+  /* Animation Logic */
+  transform: scaleY(0); /* Start crushed at the bottom/top */
+  transform-origin: bottom;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* On Hover: Expand the background to 100% height */
+.serviceCard:hover::before {
+  transform: scaleY(1);
+}
+
+/* On Hover: Lift the card */
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px -10px rgba(252, 22, 96, 0.3); /* Colored shadow */
+  border-color: transparent;
+}
+
+/* --- TEXT COLOR SWAPPING --- */
+/* By default, text is dark. On hover, we force it white. */
+.serviceCard:hover .cardTitle,
+.serviceCard:hover .cardDesc {
+  color: white;
+}
+
+/* --- ICON BOX SWAPPING --- */
+.iconBox {
+  background: #f3f4f6; /* Gray-100 */
+  color: #1e3a52;
+  transition: all 0.4s ease;
+}
+
+.serviceCard:hover .iconBox {
+  background: white; /* Turn box white */
+  color: #fc1660;    /* Turn icon pink/red */
+  transform: rotateY(180deg); /* 3D Spin effect */
+}
+
+/* --- LINK ARROW SWAPPING --- */
+.arrowLink {
+  color: #1e3a52;
+  transition: all 0.3s ease;
+}
+.serviceCard:hover .arrowLink {
+  color: white;
+}
+.serviceCard:hover .arrowIcon {
+  transform: translateX(5px);
+  stroke: white; /* Ensure SVG stroke becomes white */
+}
+
+/* --- WATERMARK NUMBER --- */
+.watermark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.03); /* Faint gray */
+  line-height: 1;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.serviceCard:hover .watermark {
+  color: rgba(255,255,255,0.1); /* Faint white */
+  transform: scale(1.2) rotate(-10deg);
+  right: -10px;
+}

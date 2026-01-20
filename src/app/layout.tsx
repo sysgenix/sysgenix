@@ -18,7 +18,7 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
       <body className={poppins.className} suppressHydrationWarning={true}>
         <Header />
           {children}
-        {/* <Footer/> */}
+        <Footer/>
         <ScrollToTop />
       </body>
     </html>
