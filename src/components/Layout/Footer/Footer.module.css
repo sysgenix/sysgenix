@@ -114,7 +114,7 @@
   }
 }
 .iconDomestic {
-  color: #f94a65;
+  color: #fc1660;
   margin-right: 16px;
   font-size: 16px;
   margin-top: 3px;
@@ -124,7 +124,7 @@
 }
 
 .icon {
-  background-color: #f94a65;
+  background-color: #fc1660;
   color: white;
   padding: 0.75rem;
   border-radius: 50%;
@@ -163,7 +163,7 @@
 }
 
 .bottom span {
-  color: #f94a65;
+  color: #fc1660;
 }
 @media screen and (max-width: 375px) {
   .contactCard {

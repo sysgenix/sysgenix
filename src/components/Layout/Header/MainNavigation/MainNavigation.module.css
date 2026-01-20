@@ -6,7 +6,7 @@
 }
 
 .NavLink:hover {
-  color: #f94a65;
+  color: #fc1660;
 }
 
 .NavLink::before {
@@ -16,7 +16,7 @@
   left: 0;
   height: 3px;
   width: 0;
-  background-color: #f94a65;
+  background-color: #fc1660;
   transition: width 0.5s;
 }
 

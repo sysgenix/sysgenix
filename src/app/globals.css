@@ -3,12 +3,12 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --main-color: #f94a65;
+  --main-color: #fc1660;
   --template-bg: #fff;
   --text-color: #170042;
   --heading-color: #06163a;
   --midnight-blue: #170042;
-  --blue-color: #f94a65;
+  --blue-color: #fc1660;
   --green-color: #5aaa46;
   --jaggery-color: #d2ab67;
   --white: #fff;

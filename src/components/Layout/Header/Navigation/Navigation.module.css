@@ -42,7 +42,7 @@
 }
 
 .UpperNav .UpperNavLi:hover .UpperNavLink {
-  color: #f94a65;
+  color: #fc1660;
 }
 
 .UpperNav .UpperNavLink:before {
@@ -52,7 +52,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #f94a65;
+  background-color: #fc1660;
   transition: all 0.5s;
 }
 
