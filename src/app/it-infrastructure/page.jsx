@@ -39,7 +39,7 @@ const features = [
          ]}
          />
 
-         <div className="relative py-28 bg-gray-50 overflow-hidden">
+         <div className="relative py-[80px] bg-gray-50 overflow-hidden">
             
             {/* Architectural Background Lines */}
             <div className="absolute inset-0 pointer-events-none">
