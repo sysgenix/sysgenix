@@ -8,6 +8,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaYoutube } from 'react-icons/fa';
 import Image from "next/image";
 import Container from "../Container";
+import Button from "@/components/ui/Button";
 
 export default function Footer() {
   return (
@@ -25,9 +26,7 @@ export default function Footer() {
             <li className="transition-transform duration-300 hover:scale-125"><Link href="#" target="_blank" rel="noopener noreferrer" aria-label="youtube"><FaYoutube /></Link></li>
           </ul>
 
-          <div className={styles.headerButtons}>
-            <Link href="/contact-us/enquiry" className={`btn ${styles.contactBtn}`}>Contact Us</Link>
-          </div>
+          <Button href="/contact-us" variant="solid">Contact Us</Button>
         </div>
 
         <div className={`${styles.topSection}  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1.5fr_1fr_300px_280px] gap-8`}>

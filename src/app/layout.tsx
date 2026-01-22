@@ -3,7 +3,7 @@ import "./globals.css";
 import React from "react";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
-import ScrollToTop from "@/components/Layout/ScrollToTop";
+import ScrollCircle from "@/components/Layout/scrollCircle";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,8 +18,8 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
       <body className={poppins.className} suppressHydrationWarning={true}>
         <Header />
           {children}
-        <Footer/>
-        <ScrollToTop />
+        <Footer/>       
+        <ScrollCircle/>
       </body>
     </html>
   );

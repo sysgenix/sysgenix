@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./HeroBanner.module.css";
 import Link from "next/link";
+import Button from "@/components/ui/Button";
 
  const sliderData = [
   {
@@ -69,18 +70,7 @@ const HeroBanner = () => {
             // Hides inactive slides from screen readers completely
             aria-hidden={!isActive}
           >
-            {/* Image Layer */}
-            {/* <div className="absolute top-0 left-0 w-full h-full">
-              <Image
-                src={slide.image}
-                alt={slide.title}
-                fill
-                priority={index === 0}
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-black/10"></div>
-            </div> */}
-
+            {/* Image Layer */}  
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
               <Image
                 src={slide.image}
@@ -110,14 +100,14 @@ const HeroBanner = () => {
                 </p>
 
                 <div className={`${styles.textEnterAnimation} ${styles.delay900}`}>
-                  <Link 
+                  <Button
                     href={slide.href}
-                    // Added tabIndex to prevent tabbing to invisible buttons
+                    variant="solid"
                     tabIndex={isActive ? 0 : -1}
-                    className="inline-block bg-(--primary-color) text-white font-semibold py-3 px-8 shadow-md hover:bg-[#c93d4e] transition-colors duration-300 tracking-wider cursor-pointer"
+                    className="py-3 px-8 shadow-md inline-block"
                   >
                     {slide.buttonText}
-                  </Link>
+                  </Button>
                 </div>
 
               </div>
