@@ -3,7 +3,6 @@ import { ShieldCheck, Layers, Globe2, Settings } from "lucide-react";
 import InnerPagesBanner from "@/components/Pages/Common/InnerPagesBanner";
 import Container from "@/components/Layout/Container";
 import SectionTitle from "@/components/Layout/SectionTitle";
-import OverviewSection from "@/components/Pages/Common/OverviewSection";
 
 const features = [
   {

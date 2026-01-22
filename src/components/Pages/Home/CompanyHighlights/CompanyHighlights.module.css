@@ -1,0 +1,101 @@
+/* Outer gradient bar */
+.highlightBar {
+  background: linear-gradient(
+      135deg,
+      rgba(21, 57, 149, 0.95),
+      rgba(37, 68, 178, 0.95)
+    ),
+    url("/images/clients-logos-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+
+/* Fade edges */
+.marqueeWrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  white-space: nowrap;
+  animation: scroll-left 60s linear infinite;
+}
+
+.marqueeWrapper:hover .marquee {
+  animation-play-state: paused;
+}
+
+/* Text style */
+.marqueeItem {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+/* Circular separator (matches reference image) */
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  margin: 0 22px;
+  flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive tuning */
+@media (max-width: 768px) {
+    .highlightBar{
+        padding: 20px 0;
+    }
+  .marqueeItem {
+    font-size: 20px;
+  }
+
+  .dot {
+    margin: 0 16px;
+  }
+
+  .marqueeWrapper {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 18%,
+      black 82%,
+      transparent 100%
+    );
+  }
+}
