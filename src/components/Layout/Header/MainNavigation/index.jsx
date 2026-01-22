@@ -9,6 +9,47 @@ export default function MainNavigation({ isFixed }) {
         </Link>        
       </li>
 
+       <li className={styles.NavItem}>
+        <Link href="#" className={styles.NavLink}>
+          <span className={styles.ServicesLink}>
+            What We Do
+            <svg
+              className={`${styles.Chevron} ${
+                isFixed ? styles.ChevronDark : styles.ChevronLight
+              }`}
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+        </Link>
+        <ul className={styles.SubNav}>
+          <li><Link href="/it-infrastructure" className={styles.SubNavLink}>IT Infrastructure</Link></li>
+          <li><Link href="/it-security-solutions" className={styles.SubNavLink}>IT Security Solutions</Link></li>
+          <li><Link href="/business-communication" className={styles.SubNavLink}>Business Communication</Link></li>
+          <li><Link href="/business-solutions" className={styles.SubNavLink}>Business Solutions</Link></li>
+          <li><Link href="/software-solutions" className={styles.SubNavLink}>Software Solutions</Link></li>
+          <li><Link href="/web-solutions" className={styles.SubNavLink}>Web Solutions</Link></li>
+          <li><Link href="/test-measurement-solutions" className={styles.SubNavLink}>Test & Measurement Solutions</Link></li>
+          <li><Link href="/wireless-solutions" className={styles.SubNavLink}>Wireless Solutions</Link></li>
+          <li><Link href="/contact-center-solutions" className={styles.SubNavLink}>Contact Center Solutions</Link></li>
+          <li><Link href="/telecom-solutions" className={styles.SubNavLink}>Telecom Solutions</Link></li>
+          <li><Link href="/office-telephone-systems" className={styles.SubNavLink}>Office Telephone Systems</Link></li>
+          <li><Link href="/video-conferencing-systems" className={styles.SubNavLink}>Video Conferencing Systems</Link></li>
+          <li><Link href="/vehicle-security-fleet-management-software" className={styles.SubNavLink}>Vehicle Security & Fleet Management Software</Link></li>
+        </ul>
+      </li>
+
       <li className={styles.NavItem}>
         <Link href="/about" className={styles.NavLink}>
           About

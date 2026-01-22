@@ -114,7 +114,7 @@
 }
 
 .SubNav .SubNavLink:hover {
-    color:var(--main-color);
+    color:var(--primary-color);
     background:var(--light-bg-color);
 }
 .btn {

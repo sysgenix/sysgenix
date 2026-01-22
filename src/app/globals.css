@@ -3,10 +3,12 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --main-color: #fc1660;
+  --primary-color: #fc1660;
+  --secondary-color: #ff6b6b;
   --template-bg: #fff;
-  --text-color: #170042;
-  --heading-color: #06163a; 
+  --title-color: #1e3a52;
+  --text-color: #170042;  
+  --text-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   --transition: all 0.3s ease-in-out;  
   --shadow-nav: 0 0 15px 0 rgba(0, 0, 0, 0.4);
 }

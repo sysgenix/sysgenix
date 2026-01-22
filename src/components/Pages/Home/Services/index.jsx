@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Services.module.css";
+import SectionTitle from "@/components/Layout/SectionTitle";
 
 const services = [
   {
@@ -87,6 +88,17 @@ const ServicesSection = () => {
                 We deliver a full spectrum of IT services. From the first line of code to the final marketing campaign, we are your dedicated digital partner.
             </p>
         </div>
+
+        
+         <SectionTitle
+          badgeText="Our Expertise"
+          title="Empowering Business With"
+          highlightText="Next-Gen Technology"
+          description="We deliver a full spectrum of IT services. From the first line of code to the final marketing campaign, we are your dedicated digital partner."
+          align="center"
+          containerAlign="center"
+        />
+        
 
         {/* --- 8-GRID LAYOUT --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">

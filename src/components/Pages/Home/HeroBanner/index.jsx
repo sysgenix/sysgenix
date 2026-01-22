@@ -50,6 +50,7 @@ const HeroBanner = () => {
 
   return (
     <section className="relative w-full h-[600px] md:h-[700px] lg:h-[100vh] min-h-[600px] overflow-hidden  bg-gray-100 font-sans">
+       
       {sliderData.map((slide, index) => {
         const isActive = index === currentSlide;
         
