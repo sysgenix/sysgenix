@@ -65,7 +65,6 @@ const ServicesSection = () => {
   return (
     <section className="py-24 bg-gray-50 relative overflow-hidden">
       
-      {/* Background Decor: Subtle dots or shapes */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-5%] w-96 h-96 bg-[#fc1660]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#1e3a52]/5 rounded-full blur-3xl"></div>
@@ -100,10 +99,8 @@ const ServicesSection = () => {
         />
         
 
-        {/* --- 8-GRID LAYOUT --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {services.map((service, index) => {
-             // Calculate staggered delay dynamically
              const delayClass = styles[`delay${(index + 1) * 100}`] || "";
 
              return (
@@ -114,7 +111,7 @@ const ServicesSection = () => {
                         p-8 rounded-2xl border border-gray-100 shadow-sm cursor-pointer group
                     `}
                 >
-                    {/* Watermark Number */}
+                    {/* Number */}
                     <div className={styles.watermark}>
                         {String(index + 1).padStart(2, "0")}
                     </div>
