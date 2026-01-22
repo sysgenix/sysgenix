@@ -8,7 +8,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Strategic IT Assessment",
-    text: "Deep evaluation of existing IT infrastructure to identify gaps, risks, and opportunities for modernization."
+    text: "Comprehensive evaluation of existing IT environments to identify modernization needs, eliminate inefficiencies, and align technology with business objectives."
   },
   {
     icon: Layers,
@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: Globe2,
-    title: "Regional Expertise at Scale",
-    text: "Proven delivery across the Middle East and Africa with enterprise-grade infrastructure solutions."
+    title: "Worldwide Delivery & Expertise",
+    text: "Proven capability to deliver enterprise-grade infrastructure solutions worldwide, supporting organizations across diverse industries and scales."
   },
   {
     icon: Settings,
@@ -75,12 +75,12 @@ const features = [
                   </p>
 
                   <p>
-                  Operating across the Middle East and Africa, we accelerate information flow
-                  through advanced structured cabling, data center infrastructure, network and
-                  wireless solutions, building management systems, media and entertainment
-                  technologies, and cloud platforms. Backed by strong partnerships with global
-                  technology leaders, we deliver tailored solutions with measurable business
-                  impact.
+                  With worldwide delivery capabilities, Sysgenix Technologies accelerates
+                  information flow through structured cabling, data center infrastructure,
+                  network and wireless solutions, building management systems, media and
+                  entertainment technologies, and cloud platforms. Our strong channel
+                  partnerships enable us to deliver tailored, enterprise-grade solutions
+                  with measurable impact.
                   </p>
 
                   <p>
