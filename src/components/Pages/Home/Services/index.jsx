@@ -74,7 +74,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
         
         {/* --- SECTION HEADER --- */}
-        <div className="text-center mb-20 max-w-3xl mx-auto">
+        {/* <div className="text-center mb-20 max-w-3xl mx-auto">
             <span className="text-[#fc1660] font-bold tracking-widest uppercase text-xs md:text-sm bg-white shadow-sm px-6 py-2 rounded-full inline-block mb-6">
                 Our Expertise
             </span>
@@ -87,7 +87,7 @@ const ServicesSection = () => {
             <p className="text-gray-500 text-lg font-light leading-relaxed">
                 We deliver a full spectrum of IT services. From the first line of code to the final marketing campaign, we are your dedicated digital partner.
             </p>
-        </div>
+        </div> */}
 
         
          <SectionTitle
