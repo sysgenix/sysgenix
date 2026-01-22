@@ -37,7 +37,7 @@
   width: 100%;
   height: 100%;
   /* Brand Gradient */
-  background: linear-gradient(135deg, #fc1660 0%, #ff5e62 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ff5e62 100%);
   z-index: -1; /* Sit behind text */
   
   /* Animation Logic */
@@ -74,7 +74,7 @@
 
 .serviceCard:hover .iconBox {
   background: white; /* Turn box white */
-  color: #fc1660;    /* Turn icon pink/red */
+  color: var(--primary-color);    /* Turn icon pink/red */
   transform: rotateY(180deg); /* 3D Spin effect */
 }
 

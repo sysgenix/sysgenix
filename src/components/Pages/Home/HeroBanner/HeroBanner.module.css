@@ -56,8 +56,8 @@
   left: 0;
   width: 100%;
   height: 150px; /* Length of the tail */
-  /* Gradient: Transparent top -> Your Brand Red (#fc1660) bottom */
-  background: linear-gradient(to bottom, transparent, #fc1660);
+  /* Gradient: Transparent top -> Your Brand Red (var(--primary-color)) bottom */
+  background: linear-gradient(to bottom, transparent, var(--primary-color));
   opacity: 0; /* Start invisible */
   
   /* Apply the animation defined below */

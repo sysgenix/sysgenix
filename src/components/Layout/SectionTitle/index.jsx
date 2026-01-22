@@ -36,7 +36,7 @@ export default function SectionTitle({
     >
       {badgeText && (
         <span
-          className={`inline-block mb-6 px-6 py-2 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase shadow-sm bg-white text-[#fc1660] ${badgeClass}`}
+          className={`inline-block mb-6 px-6 py-2 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase shadow-sm bg-white text-(--primary-color) ${badgeClass}`}
         >
           {badgeText}
         </span>

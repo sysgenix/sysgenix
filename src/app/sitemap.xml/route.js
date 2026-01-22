@@ -5,7 +5,7 @@ import path from "path";
 
 export async function GET() {
   try {
-    const baseUrl = "https://www.sysgenix.com"; // Your deployed site URL
+    const baseUrl = "https://www.sysgenix.vercel.app"; // Your deployed site URL
     const appDir = path.join(process.cwd(), "src", "app"); // Adjust if your app dir is different
     const today = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
 
