@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./Services.module.css";
 import SectionTitle from "@/components/Layout/SectionTitle";
+import Button from "@/components/ui/Button";
 
 const services = [
   {
@@ -71,24 +72,6 @@ const ServicesSection = () => {
       </div>
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-        
-        {/* --- SECTION HEADER --- */}
-        {/* <div className="text-center mb-20 max-w-3xl mx-auto">
-            <span className="text-[#fc1660] font-bold tracking-widest uppercase text-xs md:text-sm bg-white shadow-sm px-6 py-2 rounded-full inline-block mb-6">
-                Our Expertise
-            </span>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e3a52] mb-6 leading-tight">
-                Empowering Business With <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fc1660] to-[#ff6b6b]">
-                    Next-Gen Technology
-                </span>
-            </h2>
-            <p className="text-gray-500 text-lg font-light leading-relaxed">
-                We deliver a full spectrum of IT services. From the first line of code to the final marketing campaign, we are your dedicated digital partner.
-            </p>
-        </div> */}
-
-        
          <SectionTitle
           badgeText="Our Expertise"
           title="Empowering Business With"
@@ -150,9 +133,7 @@ const ServicesSection = () => {
         
         {/* --- View All Button (Optional) --- */}
         <div className="mt-16 text-center">
-            <Link href="/services" className="inline-block bg-[#1e3a52] text-white font-semibold py-4 px-10 rounded shadow-lg hover:bg-[#fc1660] transition-colors duration-300">
-                View All Services
-            </Link>
+          <Button href="/services" variant="solid">View All Services</Button>
         </div>
 
       </div>

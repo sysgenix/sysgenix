@@ -1,6 +1,8 @@
 import CompanyHighlights from "@/components/Pages/Home/CompanyHighlights";
 import HeroBanner from "@/components/Pages/Home/HeroBanner";
+import HowWeWork from "@/components/Pages/Home/HowWeWork";
 import ServicesSection from "@/components/Pages/Home/Services";
+import WhyChooseUs from "@/components/Pages/Home/WhyChooseUs";
 
 
    
@@ -11,12 +13,8 @@ export default function HomePage() {
      <HeroBanner/>
      <CompanyHighlights/>
      <ServicesSection/>
-      {/* <div className="py-[200px]">
-      <h1 className="font-bold text-[60px] md:text-[150px] text-green-600 text-center ">Sysgenix</h1>
-     </div>
-      <div className="py-[200px]">
-      <h1 className="font-bold text-[60px] md:text-[150px] text-red-600 text-center ">Sysgenix</h1>
-     </div> */}
+     {/* <WhyChooseUs/> */}
+     {/* <HowWeWork/> */}
     </>
   );
 }
