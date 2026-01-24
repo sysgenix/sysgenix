@@ -6,11 +6,12 @@ import Button from "@/components/ui/Button";
 const services = [
   {
     id: 1,
-    title: "Web Development",
-    description: "Robust, scalable websites built with Next.js and React to handle high traffic and complex functionality.",
-    link: "/services/web-development",
-    iconPath: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" 
+    title: "Cloud Solutions",
+    description: "Secure AWS & Azure cloud infrastructure setup, migration, and management for enterprise scalability.",
+    link: "/services/cloud",
+    iconPath: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
   },
+ 
   {
     id: 2,
     title: "UI/UX Design",
@@ -32,13 +33,13 @@ const services = [
     link: "/services/apps",
     iconPath: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
   },
-  {
-    id: 5,
-    title: "Cloud Solutions",
-    description: "Secure AWS & Azure cloud infrastructure setup, migration, and management for enterprise scalability.",
-    link: "/services/cloud",
-    iconPath: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-  },
+   {
+    id: 1,
+    title: "Web Development",
+    description: "Robust, scalable websites built with Next.js and React to handle high traffic and complex functionality.",
+    link: "/services/web-development",
+    iconPath: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" 
+  },  
   {
     id: 6,
     title: "Cyber Security",
@@ -131,7 +132,7 @@ const ServicesSection = () => {
           })}
         </div>
         
-        {/* --- View All Button (Optional) --- */}
+        {/* --- View All Button --- */}
         <div className="mt-16 text-center">
           <Button href="/services" variant="solid">View All Services</Button>
         </div>

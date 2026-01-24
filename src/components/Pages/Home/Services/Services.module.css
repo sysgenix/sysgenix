@@ -23,7 +23,7 @@
 .serviceCard {
   position: relative;
   z-index: 1;
-  overflow: hidden; /* Keeps the fill inside the rounded corners */
+  overflow: hidden; 
   transition: all 0.4s ease-in-out;
   background: white;
 }
@@ -35,13 +35,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  /* Brand Gradient */
-  background: linear-gradient(135deg, var(--primary-color) 0%, #ff5e62 100%);
-  z-index: -1; /* Sit behind text */
+  height: 100%;  
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  z-index: -1; 
   
   /* Animation Logic */
-  transform: scaleY(0); /* Start crushed at the bottom/top */
+  transform: scaleY(0); 
   transform-origin: bottom;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -54,12 +53,11 @@
 /* On Hover: Lift the card */
 .serviceCard:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px -10px rgba(252, 22, 96, 0.3); /* Colored shadow */
+  box-shadow: 0 20px 40px -10px rgba(252, 22, 96, 0.3); 
   border-color: transparent;
 }
 
 /* --- TEXT COLOR SWAPPING --- */
-/* By default, text is dark. On hover, we force it white. */
 .serviceCard:hover .cardTitle,
 .serviceCard:hover .cardDesc {
   color: white;
@@ -67,15 +65,15 @@
 
 /* --- ICON BOX SWAPPING --- */
 .iconBox {
-  background: #f3f4f6; /* Gray-100 */
+  background: #f3f4f6;
   color: #1e3a52;
   transition: all 0.4s ease;
 }
 
 .serviceCard:hover .iconBox {
-  background: white; /* Turn box white */
-  color: var(--primary-color);    /* Turn icon pink/red */
-  transform: rotateY(180deg); /* 3D Spin effect */
+  background: white;
+  color: var(--primary-color);   
+  transform: rotateY(180deg);
 }
 
 /* --- LINK ARROW SWAPPING --- */
@@ -88,7 +86,7 @@
 }
 .serviceCard:hover .arrowIcon {
   transform: translateX(5px);
-  stroke: white; /* Ensure SVG stroke becomes white */
+  stroke: white; 
 }
 
 /* --- WATERMARK NUMBER --- */
@@ -98,7 +96,7 @@
   right: 10px;
   font-size: 100px;
   font-weight: 900;
-  color: rgba(0,0,0,0.03); /* Faint gray */
+  color: rgba(0,0,0,0.03);
   line-height: 1;
   transition: all 0.5s ease;
   pointer-events: none;
@@ -106,7 +104,7 @@
 }
 
 .serviceCard:hover .watermark {
-  color: rgba(255,255,255,0.1); /* Faint white */
+  color: rgba(255,255,255,0.1);
   transform: scale(1.2) rotate(-10deg);
   right: -10px;
 }
