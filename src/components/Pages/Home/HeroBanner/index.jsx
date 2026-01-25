@@ -86,7 +86,7 @@ const HeroBanner = () => {
 
             {/* Content Layer */}
             <div className="relative z-20 container mx-auto h-full flex items-center px-6 md:px-12 lg:px-24">
-              <div key={currentSlide} className="max-w-2xl mt-20">
+              <div key={currentSlide} className="max-w-2xl ">
                 
                 {/* Render TitleTag (h1 or div). 
                    The classes remain identical so the look doesn't change 

@@ -2,7 +2,7 @@ import styles from "./MobileNavigation.module.css";
 import { useState } from "react";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
-export default function MobileNavigation() {
+export default function MobileNavigation({ setIsNavOpen }) {
   const [openDropdowns, setOpenDropdowns] = useState(new Set());
   const toggleDropdown = (key) => {
     setOpenDropdowns((prev) => {
@@ -21,6 +21,22 @@ export default function MobileNavigation() {
       key: "home",
       title: "Home",
       href: "/",
+    },
+     {
+      key: "whatwedo",
+      title: "What We Do",
+      href: "/#",
+      submenu: [
+        { title: "Web Solutions", href: "/web-solutions" },
+        { title: "Digital Marketing", href: "/digital-marketing" },
+        { title: "Cloud Solutions", href: "/cloud-solutions" },
+        { title: "IT Infrastructure Solutions", href: "/it-infrastructure" },
+        { title: "Software Solutions", href: "/software-solutions" },
+        { title: "Security Solutions", href: "/security-solutions" },
+        { title: "Wireless Solutions", href: "/wireless-solutions" },
+        { title: "Design & Print Solutions", href: "/design-print-solutions" },
+
+      ],
     },
     {
       key: "about",
@@ -58,7 +74,7 @@ export default function MobileNavigation() {
               toggleDropdown={toggleDropdown}
               openDropdowns={openDropdowns}
               parentKey=""
-              onLinkClick={() => setIsOpen(false)}
+              onLinkClick={() => setIsNavOpen(false)}
             />
           ))}
         </ul>

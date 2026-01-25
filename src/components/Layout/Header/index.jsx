@@ -87,7 +87,7 @@ export default function Header() {
             <CgClose />
           </div>
         </div>
-        <MobileNavigation />
+        <MobileNavigation setIsNavOpen={setIsNavOpen} />
       </div>
     </header>
   );
