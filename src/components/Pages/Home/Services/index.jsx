@@ -163,11 +163,11 @@ const ServicesSection = () => {
         </div>
 
         {/* View All */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <Button href="/services" variant="solid">
             View All Services
           </Button>
-        </div>
+        </div> */}
       </div>
       </Container>
     </section>

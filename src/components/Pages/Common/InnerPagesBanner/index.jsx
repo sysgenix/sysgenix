@@ -55,7 +55,7 @@ const InnerPagesBanner = ({ pageTitle, description, breadcrumbs, bgImage }) => {
           </div>
 
           {/* Title */}
-          <h1 className={`text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 ${styles.revealText} ${styles.delay100}`}>
+          <h1 className={`text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 ${styles.revealText} ${styles.delay100}`}>
             {pageTitle}
           </h1>
 

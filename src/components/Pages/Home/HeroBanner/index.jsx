@@ -9,7 +9,7 @@ import Button from "@/components/ui/Button";
  const sliderData = [
   {
     id: 1,
-    image: "/images/home/home-banner/hero-bg1.png", 
+    image: "/images/home/home-banner/hero-bg1.webp", 
     title: "Innovative Web Solutions For Modern Business.",
     description:
       "We build responsive, high-performance, and scalable websites tailored to elevate your brand identity and drive digital growth.",
@@ -18,7 +18,7 @@ import Button from "@/components/ui/Button";
   },
   {
     id: 2,
-    image: "/images/home/home-banner/hero-bg2.png", 
+    image: "/images/home/home-banner/hero-bg2.webp", 
     title: "Creative UI/UX Design That Inspires.",
     description:
       "Deliver seamless user experiences. Our design team crafts intuitive interfaces that blend stunning aesthetics with effortless functionality.",
@@ -27,7 +27,7 @@ import Button from "@/components/ui/Button";
   },
   {
     id: 3,
-    image: "/images/home/home-banner/hero-bg3.png", 
+    image: "/images/home/home-banner/hero-bg3.webp", 
     title: "Data-Driven SEO To Maximize Visibility.",
     description:
       "Dominate search results. We optimize your digital presence to attract organic traffic and convert visitors into loyal customers.",
@@ -51,6 +51,7 @@ const HeroBanner = () => {
 
   return (
     <section className="relative w-full h-[600px] md:h-[700px] lg:h-[100vh] min-h-[600px] overflow-hidden  bg-gray-100 font-sans">
+     
        
       {sliderData.map((slide, index) => {
         const isActive = index === currentSlide;
@@ -79,6 +80,7 @@ const HeroBanner = () => {
                 priority={index === 0}                
                 className={`object-cover object-center transition-transform duration-[7000ms] ease-in-out ${isActive ? "scale-110" : "scale-100"}`}
               />
+               {/* <div className="absolute bg-black/50 inset-0"></div> */}
               <div className={styles.imageOverlay}></div>
             </div>
 

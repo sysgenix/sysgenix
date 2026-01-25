@@ -14,7 +14,7 @@ const row1 = [
 
 const row2 = [
   { name: "N-Able", src: "/images/home/partners/n-able.svg" },
-  { name: "SentinelOne", src: "/images/home/partners/microsoft-logo.png" },
+  { name: "SentinelOne", src: "/images/home/partnerssentinel.png" },
   { name: "Proofpoint", src: "/images/home/partners/proofpoint.svg" },
   { name: "WatchGuard", src: "/images/home/partners/watchguard.svg" },
   { name: "Acronis", src: "/images/home/partners/acronis.svg" },
