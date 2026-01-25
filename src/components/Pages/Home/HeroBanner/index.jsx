@@ -79,7 +79,7 @@ const HeroBanner = () => {
                 priority={index === 0}                
                 className={`object-cover object-center transition-transform duration-[7000ms] ease-in-out ${isActive ? "scale-110" : "scale-100"}`}
               />
-              <div className="absolute inset-0 bg-black/10"></div>
+              <div className={styles.imageOverlay}></div>
             </div>
 
             {/* Content Layer */}
@@ -90,12 +90,12 @@ const HeroBanner = () => {
                    The classes remain identical so the look doesn't change 
                 */}
                 <TitleTag 
-                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-black/85 leading-tight mb-6 ${styles.textEnterAnimation} ${styles.delay500}`}
+                  className={`text-4xl md:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 ${styles.textEnterAnimation} ${styles.delay500}`}
                 >
                   {slide.title}
                 </TitleTag>
 
-                <p className={`text-lg text-black mb-10 md:pr-20 ${styles.textEnterAnimation} ${styles.delay700}`}>
+                <p className={`text-lg text-white mb-10 md:pr-20 ${styles.textEnterAnimation} ${styles.delay700}`}>
                   {slide.description}
                 </p>
 
@@ -125,7 +125,7 @@ const HeroBanner = () => {
       </div>
 
       {/* Pagination Controls */}
-      <div className="absolute z-30 bottom-8 md:bottom-12 right-6 md:right-12 flex items-center space-x-2 font-bold text-xl md:text-[50px]">
+      <div className="absolute z-30 bottom-8 md:bottom-12 right-6 md:right-12 flex items-center space-x-2 font-bold text-xl md:text-[40px]">
         {sliderData.map((_, index) => {
           const isActive = index === currentSlide;
           const slideNumber = String(index + 1).padStart(2, "0");

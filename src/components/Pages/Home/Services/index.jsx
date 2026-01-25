@@ -3,155 +3,175 @@ import styles from "./Services.module.css";
 import SectionTitle from "@/components/Layout/SectionTitle";
 import Button from "@/components/ui/Button";
 
+// React Icons (Font Awesome 6)
+import {
+  HiOutlineCodeBracket,
+  HiOutlineMegaphone,
+  HiOutlineCloud,
+  HiOutlineServerStack,
+  HiOutlineCpuChip,
+  HiOutlineShieldCheck,
+  HiOutlineWifi,
+  HiOutlinePaintBrush,
+} from "react-icons/hi2";
+
+import Container from "@/components/Layout/Container";
+
 const services = [
   {
     id: 1,
     title: "Web Solutions",
-    description: "Secure AWS & Azure cloud infrastructure setup, migration, and management for enterprise scalability.",
-    link: "/services/cloud",
-    iconPath: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+    description:
+      "High-performance, scalable websites and web applications built with modern frameworks to drive growth.",
+    link: "/services/web-solutions",
+    icon: HiOutlineCodeBracket,
   },
- 
-  // {
-  //   id: 2,
-  //   title: "UI/UX Design",
-  //   description: "Immersive user interfaces and experiences that guide visitors effortlessly towards conversion.",
-  //   link: "/services/design",
-  //   iconPath: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-  // },
   {
     id: 2,
-    title: "Digital Marketing ",
-    description: "Immersive user interfaces and experiences that guide visitors effortlessly towards conversion.",
-    link: "/services/design",
-    iconPath: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+    title: "Digital Marketing",
+    description:
+      "Data-driven digital marketing strategies including SEO, PPC, and social media to maximize ROI.",
+    link: "/services/digital-marketing",
+    icon: HiOutlineMegaphone,
   },
-  // {
-  //   id: 3,
-  //   title: "SEO Optimization",
-  //   description: "Advanced keyword strategies and technical SEO to dominate search engines and boost organic reach.",
-  //   link: "/services/seo",
-  //   iconPath: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-  // },
   {
     id: 3,
     title: "Cloud Solutions",
-    description: "Advanced keyword strategies and technical SEO to dominate search engines and boost organic reach.",
-    link: "/services/seo",
-    iconPath: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+    description:
+      "Secure cloud infrastructure setup, migration, and management for enterprise scalability.",
+    link: "/services/cloud",
+    icon: HiOutlineCloud,
   },
   {
     id: 4,
     title: "IT Infrastructure Solutions",
-    description: "Native and cross-platform mobile apps that provide seamless experiences on iOS and Android devices.",
-    link: "/services/apps",
-    iconPath: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+    description:
+      "End-to-end IT infrastructure planning, deployment, and optimization for reliable business operations.",
+    link: "/services/it-infrastructure",
+    icon: HiOutlineServerStack,
   },
-   {
-    id: 1,
+  {
+    id: 5,
     title: "Software Solutions",
-    description: "Robust, scalable websites built with Next.js and React to handle high traffic and complex functionality.",
-    link: "/services/web-development",
-    iconPath: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" 
-  },  
+    description:
+      "Custom software development solutions designed to automate workflows and scale with your business.",
+    link: "/services/software",
+    icon: HiOutlineCpuChip,
+  },
   {
     id: 6,
     title: "Security Solutions",
-    description: "Comprehensive security audits, penetration testing, and protection protocols to safeguard your data.",
+    description:
+      "Comprehensive cybersecurity solutions including audits, monitoring, and threat protection.",
     link: "/services/security",
-    iconPath: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+    icon: HiOutlineShieldCheck,
   },
   {
     id: 7,
     title: "Wireless Solutions",
-        description: "Performance-based marketing campaigns across Social Media, PPC, and Email to drive instant leads.",
-    link: "/services/marketing",
-    iconPath: "M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+    description:
+      "Reliable wireless network design and implementation for seamless connectivity and performance.",
+    link: "/services/wireless",
+    icon: HiOutlineWifi,
   },
   {
     id: 8,
     title: "Design & Print Solutions",
-    description: "Strategic technology planning and digital transformation consulting to align IT with business goals.",
-    link: "/services/consultancy",
-    iconPath: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+    description:
+      "Creative branding, graphic design, and premium print solutions to strengthen brand identity.",
+    link: "/services/design-print",
+    icon: HiOutlinePaintBrush,
   },
 ];
+
 
 const ServicesSection = () => {
   return (
     <section className="py-24 bg-gray-50 relative overflow-hidden">
       
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      {/* Background Effects */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-[-10%] left-[-5%] w-96 h-96 bg-[#fc1660]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#1e3a52]/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-         <SectionTitle
+      <Container>
+        <div className="relative z-10">
+        <SectionTitle
           badgeText="Our Expertise"
           title="Empowering Business With"
           highlightText="Next-Gen Technology"
-          description="We deliver a full spectrum of IT services. From the first line of code to the final marketing campaign, we are your dedicated digital partner."
+          description="We deliver a full spectrum of IT services — from development to deployment and beyond."
           align="center"
           containerAlign="center"
         />
-        
 
+        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {services.map((service, index) => {
-             const delayClass = styles[`delay${(index + 1) * 100}`] || "";
+            const Icon = service.icon;
+            const delayClass = styles[`delay${(index + 1) * 100}`] || "";
 
-             return (
-                <div 
-                    key={service.id} 
-                    className={`
-                        ${styles.serviceCard} ${styles.cardAnimate} ${delayClass}
-                        p-8 rounded-2xl border border-gray-100 shadow-sm cursor-pointer group
-                    `}
-                >
-                    {/* Number */}
-                    <div className={styles.watermark}>
-                        {String(index + 1).padStart(2, "0")}
-                    </div>
-
-                    {/* Icon Box */}
-                    <div className={`${styles.iconBox} w-16 h-16 rounded-xl flex items-center justify-center mb-8`}>
-                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={service.iconPath} />
-                        </svg>
-                    </div>
-
-                    {/* Content */}
-                    <h3 className={`${styles.cardTitle} text-xl font-bold text-[#1e3a52] mb-4`}>
-                        {service.title}
-                    </h3>
-                    <p className={`${styles.cardDesc} text-gray-500 text-sm leading-relaxed mb-8 h-20`}>
-                        {service.description}
-                    </p>
-
-                    {/* Arrow Button */}
-                    <Link href={service.link} className={`${styles.arrowLink} inline-flex items-center font-bold text-sm tracking-wide uppercase`}>
-                        Read More
-                        <svg 
-                            className={`${styles.arrowIcon} w-4 h-4 ml-2 transition-transform duration-300`} 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </Link>
+            return (
+              <div
+                key={service.id}
+                className={`${styles.serviceCard} ${styles.cardAnimate} ${delayClass}
+                p-8 rounded-2xl border border-gray-100 shadow-sm cursor-pointer group`}
+              >
+                {/* Watermark */}
+                <div className={styles.watermark}>
+                  {String(index + 1).padStart(2, "0")}
                 </div>
+
+                {/* Icon */}
+                <div
+                  className={`${styles.iconBox} w-16 h-16 rounded-xl flex items-center justify-center mb-8`}
+                >
+                  <Icon className="text-3xl transition-transform duration-300" />
+                </div>
+
+                {/* Content */}
+                <h3 className={`${styles.cardTitle} text-xl font-bold text-[#1e3a52] mb-4`}>
+                  {service.title}
+                </h3>
+
+                <p className={`${styles.cardDesc} text-gray-500 text-sm leading-relaxed mb-8 h-20`}>
+                  {service.description}
+                </p>
+
+                {/* Read More */}
+                <Link
+                  href={service.link}
+                  className={`${styles.arrowLink} inline-flex items-center font-bold text-sm tracking-wide uppercase`}
+                >
+                  Read More
+                  <svg
+                    className={`${styles.arrowIcon} w-4 h-4 ml-2 transition-transform duration-300`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
             );
           })}
         </div>
-        
-        {/* --- View All Button --- */}
-        <div className="mt-16 text-center">
-          <Button href="/services" variant="solid">View All Services</Button>
-        </div>
 
+        {/* View All */}
+        <div className="mt-16 text-center">
+          <Button href="/services" variant="solid">
+            View All Services
+          </Button>
+        </div>
       </div>
+      </Container>
     </section>
   );
 };
