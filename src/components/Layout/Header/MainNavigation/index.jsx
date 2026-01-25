@@ -45,8 +45,7 @@ export default function MainNavigation({ isFixed }) {
           <li><Link href="/contact-center-solutions" className={styles.SubNavLink}>Contact Center Solutions</Link></li>
           <li><Link href="/telecom-solutions" className={styles.SubNavLink}>Telecom Solutions</Link></li>
           <li><Link href="/office-telephone-systems" className={styles.SubNavLink}>Office Telephone Systems</Link></li>
-          <li><Link href="/video-conferencing-systems" className={styles.SubNavLink}>Video Conferencing Systems</Link></li>
-          <li><Link href="/vehicle-security-fleet-management-software" className={styles.SubNavLink}>Vehicle Security & Fleet Management Software</Link></li>
+          <li><Link href="/video-conferencing-systems" className={styles.SubNavLink}>Video Conferencing Systems</Link></li>          
         </ul>
       </li>
 

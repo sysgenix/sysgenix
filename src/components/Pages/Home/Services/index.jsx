@@ -12,16 +12,30 @@ const services = [
     iconPath: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
   },
  
+  // {
+  //   id: 2,
+  //   title: "UI/UX Design",
+  //   description: "Immersive user interfaces and experiences that guide visitors effortlessly towards conversion.",
+  //   link: "/services/design",
+  //   iconPath: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+  // },
   {
     id: 2,
-    title: "UI/UX Design",
+    title: "IT Infrastructure ",
     description: "Immersive user interfaces and experiences that guide visitors effortlessly towards conversion.",
     link: "/services/design",
     iconPath: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
   },
+  // {
+  //   id: 3,
+  //   title: "SEO Optimization",
+  //   description: "Advanced keyword strategies and technical SEO to dominate search engines and boost organic reach.",
+  //   link: "/services/seo",
+  //   iconPath: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+  // },
   {
     id: 3,
-    title: "SEO Optimization",
+    title: "IT Security Solutions",
     description: "Advanced keyword strategies and technical SEO to dominate search engines and boost organic reach.",
     link: "/services/seo",
     iconPath: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
