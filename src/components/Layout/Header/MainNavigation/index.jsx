@@ -33,7 +33,7 @@ export default function MainNavigation({ isFixed }) {
             </svg>
           </span>
         </Link>
-        <ul className={styles.SubNav}>
+        {/* <ul className={styles.SubNav}>
           <li><Link href="/it-infrastructure" className={styles.SubNavLink}>IT Infrastructure</Link></li>
           <li><Link href="/it-security-solutions" className={styles.SubNavLink}>IT Security Solutions</Link></li>
           <li><Link href="/business-communication" className={styles.SubNavLink}>Business Communication</Link></li>
@@ -46,6 +46,16 @@ export default function MainNavigation({ isFixed }) {
           <li><Link href="/telecom-solutions" className={styles.SubNavLink}>Telecom Solutions</Link></li>
           <li><Link href="/office-telephone-systems" className={styles.SubNavLink}>Office Telephone Systems</Link></li>
           <li><Link href="/video-conferencing-systems" className={styles.SubNavLink}>Video Conferencing Systems</Link></li>          
+        </ul> */}
+        <ul className={styles.SubNav}>
+          <li><Link href="/web-solutions" className={styles.SubNavLink}>Web Solutions</Link></li>
+          <li><Link href="/digital-marketing" className={styles.SubNavLink}>Digital Marketing</Link></li>
+          <li><Link href="/cloud-solutions" className={styles.SubNavLink}>Cloud Solutions</Link></li>
+          <li><Link href="/it-infrastructure" className={styles.SubNavLink}>IT Infrastructure Solutions</Link></li>
+          <li><Link href="/software-solutions" className={styles.SubNavLink}>Software Solutions</Link></li>
+          <li><Link href="/security-solutions" className={styles.SubNavLink}>Security Solutions</Link></li>
+          <li><Link href="/wireless-solutions" className={styles.SubNavLink}>Wireless Solutions</Link></li>
+          <li><Link href="/design-print-solutions" className={styles.SubNavLink}>Design &amp; Print Solutions</Link></li>
         </ul>
       </li>
 

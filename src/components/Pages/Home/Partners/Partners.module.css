@@ -1,0 +1,73 @@
+.partnersSection {
+  background-image: url("/images/home/partners/partners-bg.jpg");
+  
+}
+
+/* --- THE CONTAINER --- */
+.marqueeContainer {
+  display: flex;
+  overflow: hidden;
+  user-select: none; 
+  gap: 0; 
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+/* --- THE TRACKS --- */
+.track {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 4rem;  
+  width: max-content;  
+  padding-right: 4rem; 
+  animation: scroll 40s linear infinite;
+}
+
+.trackReverse {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  width: max-content;
+  padding-right: 4rem; 
+  animation: scrollReverse 40s linear infinite;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Start at -100% and move to 0 for reverse flow */
+@keyframes scrollReverse {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* Pause on Hover */
+.marqueeContainer:hover .track,
+.marqueeContainer:hover .trackReverse {
+  animation-play-state: paused;
+}
+
+/* --- LOGO STYLING --- */
+.partnerLogo {
+  /* No changes needed here, keeping your style */
+  filter: grayscale(100%) opacity(0.6);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.partnerLogo:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.1);
+}

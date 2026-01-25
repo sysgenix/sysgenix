@@ -2,8 +2,6 @@ import Link from "next/link";
 import styles from "./Services.module.css";
 import SectionTitle from "@/components/Layout/SectionTitle";
 import Button from "@/components/ui/Button";
-
-// React Icons (Font Awesome 6)
 import {
   HiOutlineCodeBracket,
   HiOutlineMegaphone,
@@ -14,7 +12,6 @@ import {
   HiOutlineWifi,
   HiOutlinePaintBrush,
 } from "react-icons/hi2";
-
 import Container from "@/components/Layout/Container";
 
 const services = [
@@ -23,7 +20,7 @@ const services = [
     title: "Web Solutions",
     description:
       "High-performance, scalable websites and web applications built with modern frameworks to drive growth.",
-    link: "/services/web-solutions",
+    link: "/web-solutions",
     icon: HiOutlineCodeBracket,
   },
   {
@@ -31,7 +28,7 @@ const services = [
     title: "Digital Marketing",
     description:
       "Data-driven digital marketing strategies including SEO, PPC, and social media to maximize ROI.",
-    link: "/services/digital-marketing",
+    link: "/digital-marketing",
     icon: HiOutlineMegaphone,
   },
   {
@@ -39,7 +36,7 @@ const services = [
     title: "Cloud Solutions",
     description:
       "Secure cloud infrastructure setup, migration, and management for enterprise scalability.",
-    link: "/services/cloud",
+    link: "/cloud-solutions",
     icon: HiOutlineCloud,
   },
   {
@@ -47,7 +44,7 @@ const services = [
     title: "IT Infrastructure Solutions",
     description:
       "End-to-end IT infrastructure planning, deployment, and optimization for reliable business operations.",
-    link: "/services/it-infrastructure",
+    link: "/it-infrastructure",
     icon: HiOutlineServerStack,
   },
   {
@@ -55,7 +52,7 @@ const services = [
     title: "Software Solutions",
     description:
       "Custom software development solutions designed to automate workflows and scale with your business.",
-    link: "/services/software",
+    link: "/software-solutions",
     icon: HiOutlineCpuChip,
   },
   {
@@ -63,7 +60,7 @@ const services = [
     title: "Security Solutions",
     description:
       "Comprehensive cybersecurity solutions including audits, monitoring, and threat protection.",
-    link: "/services/security",
+    link: "/security-solutions",
     icon: HiOutlineShieldCheck,
   },
   {
@@ -71,7 +68,7 @@ const services = [
     title: "Wireless Solutions",
     description:
       "Reliable wireless network design and implementation for seamless connectivity and performance.",
-    link: "/services/wireless",
+    link: "/wireless-solutions",
     icon: HiOutlineWifi,
   },
   {
@@ -79,7 +76,7 @@ const services = [
     title: "Design & Print Solutions",
     description:
       "Creative branding, graphic design, and premium print solutions to strengthen brand identity.",
-    link: "/services/design-print",
+    link: "/design-print-solutions",
     icon: HiOutlinePaintBrush,
   },
 ];
@@ -113,7 +110,8 @@ const ServicesSection = () => {
             const delayClass = styles[`delay${(index + 1) * 100}`] || "";
 
             return (
-              <div
+              <Link
+              href={service.link}
                 key={service.id}
                 className={`${styles.serviceCard} ${styles.cardAnimate} ${delayClass}
                 p-8 rounded-2xl border border-gray-100 shadow-sm cursor-pointer group`}
@@ -140,8 +138,8 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Read More */}
-                <Link
-                  href={service.link}
+                <div
+                 
                   className={`${styles.arrowLink} inline-flex items-center font-bold text-sm tracking-wide uppercase`}
                 >
                   Read More
@@ -158,8 +156,8 @@ const ServicesSection = () => {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </Link>
-              </div>
+                </div>
+              </Link>
             );
           })}
         </div>
