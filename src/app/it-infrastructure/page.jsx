@@ -3,6 +3,7 @@ import { ShieldCheck, Layers, Globe2, Settings } from "lucide-react";
 import InnerPagesBanner from "@/components/Pages/Common/InnerPagesBanner";
 import Container from "@/components/Layout/Container";
 import SectionTitle from "@/components/Layout/SectionTitle";
+import ItInfrastructureOverview from "@/components/Pages/InnerPages/ItInfrastructure/ItInfrastructureOverview";
 
 const features = [
   {
@@ -121,6 +122,9 @@ const features = [
             </div>
             </Container>
          </div>  
+
+         <ItInfrastructureOverview/>
+        
        </>
     );
   }
