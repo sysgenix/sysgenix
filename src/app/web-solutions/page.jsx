@@ -15,7 +15,8 @@ export default function WebSolutionsPage() {
 
       <WebSolutionsStrategy/>
       <WebSolutionsCapabilities/>
-      <WebSolutionsProcess/>
+      <WebSolutionsProcess/>     
+     
     </>
   );
 }

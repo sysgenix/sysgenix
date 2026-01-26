@@ -4,7 +4,7 @@ import SectionTitle from "@/components/Layout/SectionTitle";
 
 export default function WebSolutionsIntro() {
   return (
-    <section className="py-20 ">
+    <section className="py-24 ">
       <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             {/* Image */}
