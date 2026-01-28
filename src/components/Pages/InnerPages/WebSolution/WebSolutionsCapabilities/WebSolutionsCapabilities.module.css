@@ -1,0 +1,74 @@
+.webdevCard {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Gradient fill layer */
+.webdevCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  z-index: -1;
+
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover fill */
+.webdevCard:hover::before {
+  transform: scaleY(1);
+}
+
+/* Lift */
+.webdevCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(252, 22, 96, 0.25);
+  border-color: transparent;
+}
+
+/* Accent bar */
+.accentBar {
+  transition: opacity 0.3s ease;
+}
+
+/* Icon box */
+.iconBox {
+  transition: all 0.3s ease;
+}
+
+/* Text */
+.title,
+.desc {
+  transition: color 0.3s ease;
+}
+
+/* Hover state children */
+.webdevCard:hover .iconBox {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: white;
+}
+
+.webdevCard:hover .title,
+.webdevCard:hover .desc {
+  color: white;
+}
+
+.webdevCard:hover .accentBar {
+  opacity: 1;
+}
+
+.webdevCard:hover .underline {
+  width: 100%;
+}

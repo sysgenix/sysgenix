@@ -69,7 +69,7 @@ export default function WebSolutionsProcess() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
           
           {/* LEFT — Process Steps (60%) */}
-          <div className="md:col-span-7 space-y-12">
+          <div className="md:col-span-7 space-y-8">
             {steps.map((item, index) => {
               const Icon = item.icon;
               const isActive = index === activeIndex;
@@ -107,7 +107,7 @@ export default function WebSolutionsProcess() {
                       <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-slate-600 leading-relaxed text-base md:text-lg">
+                      <p className="text-slate-600 leading-relaxed text-base md:text-md">
                         {item.description}
                       </p>
                     </div>

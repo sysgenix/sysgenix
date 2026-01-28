@@ -1,4 +1,5 @@
 import InnerPagesBanner from "@/components/Pages/Common/InnerPagesBanner";
+import WebSolutionFAQ from "@/components/Pages/InnerPages/WebSolution/WebSolutionFAQ";
 import WebSolutionsCapabilities from "@/components/Pages/InnerPages/WebSolution/WebSolutionsCapabilities";
 import WebSolutionsStrategy from "@/components/Pages/InnerPages/WebSolution/WebSolutionsIntro";
 import WebSolutionsProcess from "@/components/Pages/InnerPages/WebSolution/WebSolutionsProcess";
@@ -15,7 +16,8 @@ export default function WebSolutionsPage() {
 
       <WebSolutionsStrategy/>
       <WebSolutionsCapabilities/>
-      <WebSolutionsProcess/>     
+      <WebSolutionsProcess/>    
+      <WebSolutionFAQ/> 
      
     </>
   );

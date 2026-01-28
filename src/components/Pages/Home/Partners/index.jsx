@@ -5,20 +5,21 @@ import SectionTitle from "@/components/Layout/SectionTitle";
 
 const row1 = [
   { name: "Microsoft", src: "/images/home/partners/microsoft-logo.png" },
-  { name: "AWS", src: "/images/home/partners/aws.svg" }, 
-  { name: "IBM", src: "/images/home/partners/ibm.svg" },
-  { name: "Veeam", src: "/images/home/partners/veeam.svg" },
-  { name: "ConnectWise", src: "/images/home/partners/connectwise.svg" },
-  { name: "BitTitan", src: "/images/home/partners/bittitan.svg" },
+  { name: "AWS", src: "/images/home/partners/aws.png" }, 
+  { name: "IBM", src: "/images/home/partners/ibm.png" },
+  { name: "Veeam", src: "/images/home/partners/veeam.png" },
+  { name: "ConnectWise", src: "/images/home/partners/connectwise.png" },
+  { name: "BitTitan", src: "/images/home/partners/bittitan.png" },
+  { name: "Screen-Connect", src: "/images/home/partners/screen-connect.png" },
 ];
 
 const row2 = [
-  { name: "N-Able", src: "/images/home/partners/n-able.svg" },
-  { name: "SentinelOne", src: "/images/home/partnerssentinel.png" },
-  { name: "Proofpoint", src: "/images/home/partners/proofpoint.svg" },
-  { name: "WatchGuard", src: "/images/home/partners/watchguard.svg" },
-  { name: "Acronis", src: "/images/home/partners/acronis.svg" },
-  { name: "Exclaimer", src: "/images/home/partners/exclaimer.svg" },
+  { name: "N-Able", src: "/images/home/partners/n-able.png" },
+  { name: "SentinelOne", src: "/images/home/partners/sentinel.png" },
+  { name: "Proofpoint", src: "/images/home/partners/proofpoint.png" },
+  { name: "WatchGuard", src: "/images/home/partners/watchguard.png" },
+  { name: "Acronis", src: "/images/home/partners/acronis.png" },
+  { name: "Exclaimer", src: "/images/home/partners/exclaimer.png" },
 ];
 
 const Partners = () => {
