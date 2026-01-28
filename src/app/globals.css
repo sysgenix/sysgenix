@@ -13,6 +13,19 @@ html {
   --shadow-nav: 0 0 15px 0 rgba(0, 0, 0, 0.4);
 }
 
+body {
+  font-family: var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;   
+  color: var(--text-color);
+  background-color: var(--template-bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
 p {
   text-align: justify;
 }
+

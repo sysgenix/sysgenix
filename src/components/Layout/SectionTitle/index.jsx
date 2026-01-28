@@ -74,7 +74,7 @@ export default function SectionTitle({
 
       {description && (
         <p
-          className={`mt-8 font-light leading-relaxed text-gray-500 ${descriptionSize} ${descriptionClass}`}
+          className={`mt-8 font-light leading-relaxed text-gray-500! text-[18px]! ${descriptionSize} ${descriptionClass}`}
         >
           {description}
         </p>

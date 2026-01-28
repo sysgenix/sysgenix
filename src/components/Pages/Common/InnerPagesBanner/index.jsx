@@ -55,7 +55,7 @@ const InnerPagesBanner = ({ pageTitle, description, breadcrumbs, bgImage }) => {
           </div>
 
           {/* Title */}
-          <h1 className={`text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 ${styles.revealText} ${styles.delay100}`}>
+          <h1 className={`text-3xl! md:text-4xl! lg:text-5xl! font-bold! text-white! mb-6 ${styles.revealText} ${styles.delay100}`}>
             {pageTitle}
           </h1>
 
@@ -63,7 +63,7 @@ const InnerPagesBanner = ({ pageTitle, description, breadcrumbs, bgImage }) => {
 
           {/* Dynamic Description */}
           {description && (
-            <p className={`text-lg text-gray-300 max-w-xl font-light leading-relaxed ${styles.revealText} ${styles.delay300}`}>
+            <p className={`text-lg! text-gray-300! max-w-xl font-light leading-relaxed ${styles.revealText} ${styles.delay300}`}>
               {description}
             </p>
           )}

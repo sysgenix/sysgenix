@@ -92,12 +92,12 @@ const HeroBanner = () => {
                    The classes remain identical so the look doesn't change 
                 */}
                 <TitleTag 
-                  className={`text-4xl md:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 ${styles.textEnterAnimation} ${styles.delay500}`}
+                  className={`text-4xl! md:text-4xl! lg:text-6xl! font-bold! text-white! leading-tight mb-6 ${styles.textEnterAnimation} ${styles.delay500}`}
                 >
                   {slide.title}
                 </TitleTag>
 
-                <p className={`text-lg text-white mb-10 md:pr-20 ${styles.textEnterAnimation} ${styles.delay700}`}>
+                <p className={`text-lg! text-white! mb-10 md:pr-20 ${styles.textEnterAnimation} ${styles.delay700}`}>
                   {slide.description}
                 </p>
 

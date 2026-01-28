@@ -1,4 +1,5 @@
 import InnerPagesBanner from "@/components/Pages/Common/InnerPagesBanner";
+import DigitalMarketingIntro from "@/components/Pages/InnerPages/WebSolution/DigitalMarketing/DigitalMarketingIntro";
 
 export default function DigitalMarketingPage() {
   return (
@@ -9,6 +10,8 @@ export default function DigitalMarketingPage() {
         bgImage="/images/home/home-banner/hero-bg1.png"
         breadcrumbs={[{ label: "Digital Marketing", href: null }]}
       />
+      
+      {/* <DigitalMarketingIntro/> */}
     </>
   );
 }
