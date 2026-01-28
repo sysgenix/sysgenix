@@ -32,7 +32,7 @@ export default function WebSolutionsIntro() {
               titleSize="text-2xl md:text-5xl" 
               marginBottom="mb-4"         
             />
-            <div className="space-y-4 text-gray-600 leading-relaxed text-[15.5px] max-w-2xl">
+            <div className="space-y-4 text-gray-600 leading-relaxed text-[16px] ">
               <p>
                 Across industries worldwide, organizations depend on their web
                 platforms to drive engagement, streamline operations, and

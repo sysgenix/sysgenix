@@ -6,6 +6,7 @@ export default function Button({
   children,
   variant = "outline",
   isFixed = false,
+  fullWidth = false,
   imageSrc,
   imageAlt = "",
   imageSize = 24,
@@ -13,7 +14,9 @@ export default function Button({
   className = "",
 }) {
   const base =
-    "inline-flex items-center gap-2 font-semibold py-2 px-4 tracking-wider border transition-colors duration-300 cursor-pointer";
+    "inline-flex items-center justify-center gap-2 font-semibold py-2 px-4 tracking-wider border transition-colors duration-300 cursor-pointer group overflow-hidden";
+
+  const widthClass = fullWidth ? "w-full" : "w-auto";
 
   const variantStyles = {
     outline: isFixed
@@ -28,7 +31,7 @@ export default function Button({
     <Link
       href={href}
       tabIndex={tabIndex}
-      className={`${base} ${variantStyles[variant]} ${className}`}
+      className={`${base} ${widthClass} ${variantStyles[variant]} ${className}`}
     >
       {imageSrc && (
         <Image
@@ -38,7 +41,16 @@ export default function Button({
           height={imageSize}
         />
       )}
-      {children}
+
+      {/* 🔥 TEXT SLIDE EFFECT (ADDED ONLY) */}
+      <span className="relative  overflow-hidden">
+        <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+          {children}
+        </span>
+        <span className="absolute inset-0 block translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0">
+          {children}
+        </span>
+      </span>
     </Link>
   );
 }

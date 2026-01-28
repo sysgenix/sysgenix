@@ -1,4 +1,5 @@
 import InnerPagesBanner from "@/components/Pages/Common/InnerPagesBanner";
+import SiteCTA from "@/components/Pages/Common/SiteCta";
 import WebSolutionFAQ from "@/components/Pages/InnerPages/WebSolution/WebSolutionFAQ";
 import WebSolutionsCapabilities from "@/components/Pages/InnerPages/WebSolution/WebSolutionsCapabilities";
 import WebSolutionsStrategy from "@/components/Pages/InnerPages/WebSolution/WebSolutionsIntro";
@@ -18,6 +19,7 @@ export default function WebSolutionsPage() {
       <WebSolutionsCapabilities/>
       <WebSolutionsProcess/>    
       <WebSolutionFAQ/> 
+      <SiteCTA/>
      
     </>
   );

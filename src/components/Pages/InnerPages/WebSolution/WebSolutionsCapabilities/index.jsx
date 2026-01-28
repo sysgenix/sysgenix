@@ -52,18 +52,23 @@ const capabilities = [
 
 export default function WebSolutionsCapabilities() {
   return (
-    <section className="py-24 bg-gray-200">
+    <section className={styles.CapabilitiesSection}>
+      <div className={styles.overlay} />
       <Container>
-        <SectionTitle
+       <div className="relative z-2">
+         <SectionTitle
           badgeText="Capabilities"
           title="What We Deliver"
+          titleClass="text-white"
           highlightText="Through Web Solutions"
+          highlightClass="text-white"
           titleSize="text-2xl md:text-5xl"
           marginBottom="mb-14"
           align="center"
           containerAlign="center"
         />
 
+       </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {capabilities.map((item, index) => {
             const Icon = item.icon;
