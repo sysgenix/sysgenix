@@ -1,0 +1,64 @@
+.deptCard {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.deptCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  z-index: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.deptCard:hover::before {
+  transform: scaleY(1);
+}
+
+.deptCard:hover {
+  transform: translateY(-8px);
+  border-color: transparent;
+  box-shadow: 0 20px 45px rgba(252, 22, 96, 0.25);
+}
+
+.cardInner {
+  position: relative;
+  z-index: 1;
+}
+
+.iconBox,
+.title,
+.desc,
+.contactLine,
+.arrow {
+  transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.deptCard:hover .iconBox {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: white;
+}
+
+.deptCard:hover .title,
+.deptCard:hover .desc,
+.deptCard:hover .contactLine,
+.deptCard:hover .arrow {
+  color: white;
+}
+
+.deptCard:hover .divider {
+  border-color: rgba(255, 255, 255, 0.25);
+}
