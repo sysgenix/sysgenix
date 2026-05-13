@@ -33,13 +33,13 @@ export default function CloudIntro() {
           {/* Image */}
           <div className="lg:col-span-5">
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative w-full aspect-[5/4] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/inner-pages/it-infrastucture/infrastructure.jpg"
+                  src="/images/inner-pages/cloud-solutions/cloud.webp"
                   alt="Enterprise Cloud Solutions and Modern Infrastructure"
-                  width={900}
-                  height={700}
-                  className="object-cover w-full h-full"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover"
                   priority
                 />
               </div>

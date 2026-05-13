@@ -47,12 +47,10 @@ export default function MobileNavigation({ setIsNavOpen }) {
       title: "Services",
       href: "/services",
       submenu: [
-        { title: "Digital Marketing", href: "/services/digital-marketing" },
-        { title: "Web Design", href: "/services/web-design" },
-        { title: "Mobile Apps", href: "/services/mobile-apps" },
-        { title: "UI/UX Design", href: "/services/ui-ux-design" },
-        { title: "E-Commerce", href: "/services/e-commerce" },
-        { title: "SEO Services", href: "/services/seo-services" },
+        { title: "Cloud Operations", href: "/services/cloud-operations" },
+        { title: "Infrastructure Management", href: "/services/infrastructure-management" },
+        { title: "Security & Network Operations Center", href: "/services/security-network-operations-center" },
+        { title: "Annual Maintenance Contracts", href: "/services/annual-maintenance-contract" },
       ],
     },
     {
