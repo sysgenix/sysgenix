@@ -29,13 +29,13 @@ export default function AIIntro() {
           {/* Image */}
           <div className="lg:col-span-5">
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative w-full aspect-[5/4] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/inner-pages/web-solutions/intro.jpg"
+                  src="/images/inner-pages/ai-solutions/artificial-intelligence.webp"
                   alt="Enterprise AI Solutions and Intelligent Automation"
-                  width={900}
-                  height={700}
-                  className="object-cover w-full h-full"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover"
                   priority
                 />
               </div>

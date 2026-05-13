@@ -90,12 +90,10 @@ export default function MainNavigation({ isFixed }) {
           </span>
         </Link>
         <ul className={styles.SubNav}>
-          <li><Link href="/services/digital-marketing" className={styles.SubNavLink}>Digital Marketing</Link></li>
-          <li><Link href="/services/web-design" className={styles.SubNavLink}>Web Design</Link></li>
-          <li><Link href="/services/mobile-apps" className={styles.SubNavLink}>Mobile Apps</Link></li>
-          <li><Link href="/services/ui-ux-design" className={styles.SubNavLink}>UI/UX Design</Link></li>
-          <li><Link href="/services/e-commerce" className={styles.SubNavLink}>E-Commerce</Link></li>
-          <li><Link href="/services/seo-services" className={styles.SubNavLink}>SEO Services</Link></li>
+          <li><Link href="/services/cloud-operations" className={styles.SubNavLink}>Cloud Operations</Link></li>
+          <li><Link href="/services/infrastructure-management" className={styles.SubNavLink}>Infrastructure Management</Link></li>
+          <li><Link href="/services/security-network-operations-center" className={styles.SubNavLink}>Security &amp; Network Operations Center</Link></li>
+          <li><Link href="/services/annual-maintenance-contract" className={styles.SubNavLink}>Annual Maintenance Contracts</Link></li>
         </ul>       
       </li>
       <li className={styles.NavItem}>

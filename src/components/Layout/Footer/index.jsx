@@ -49,12 +49,10 @@ export default function Footer() {
           <div>
             <h3 className={styles.heading}>Services</h3>
             <ul className={styles.list}>
-              <li><Link href="/#">Digital Marketing</Link></li>              
-              <li><Link href="/#">Web Design </Link></li>              
-              <li><Link href="/#">Mobile Apps </Link></li>              
-              <li><Link href="/#">UI/UX Design </Link></li>              
-              <li><Link href="/#">E-Commerce </Link></li>              
-              <li><Link href="/#">SEO Services </Link></li>              
+              <li><Link href="/services/cloud-operations">Cloud Operations</Link></li>
+              <li><Link href="/services/infrastructure-management">Infrastructure Management</Link></li>
+              <li><Link href="/services/security-network-operations-center">Security &amp; Network Operations Center</Link></li>
+              <li><Link href="/services/annual-maintenance-contract">Annual Maintenance Contracts</Link></li>
             </ul>
           </div>
 
