@@ -1,0 +1,107 @@
+.section {
+  position: relative;
+  padding: 6rem 0;
+  background: #0b1226;
+  background-image:
+    radial-gradient(at 20% 10%, rgba(252, 22, 96, 0.18) 0px, transparent 50%),
+    radial-gradient(at 85% 0%, rgba(99, 102, 241, 0.18) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(252, 22, 96, 0.12) 0px, transparent 60%),
+    radial-gradient(at 0% 90%, rgba(30, 58, 82, 0.4) 0px, transparent 60%);
+  overflow: hidden;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  pointer-events: none;
+}
+
+.glassCard {
+  position: relative;
+  border-radius: 18px;
+  padding: 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Animated gradient border on hover */
+.glassCard::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    rgba(255, 255, 255, 0.05) 30%,
+    rgba(255, 255, 255, 0.05) 70%,
+    var(--secondary-color)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.glassCard:hover {
+  transform: translateY(-6px);
+  border-color: transparent;
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.4),
+    0 0 32px rgba(252, 22, 96, 0.18);
+}
+
+.glassCard:hover::before {
+  opacity: 1;
+}
+
+.iconTile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(252, 22, 96, 0.18), rgba(255, 107, 107, 0.12));
+  border: 1px solid rgba(252, 22, 96, 0.3);
+  color: #ff6b6b;
+  transition: all 0.3s ease;
+}
+
+.glassCard:hover .iconTile {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(252, 22, 96, 0.35);
+}
+
+.tagPill {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}

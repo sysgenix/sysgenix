@@ -9,7 +9,7 @@ import {
   HiOutlineServerStack,
   HiOutlineCpuChip,
   HiOutlineShieldCheck,
-  HiOutlineWifi,
+  HiOutlineSparkles,
   HiOutlinePaintBrush,
 } from "react-icons/hi2";
 import Container from "@/components/Layout/Container";
@@ -17,22 +17,14 @@ import Container from "@/components/Layout/Container";
 const services = [
   {
     id: 1,
-    title: "Web Solutions",
+    title: "AI Solutions",
     description:
-      "High-performance, scalable websites and web applications built with modern frameworks to drive growth.",
-    link: "/web-solutions",
-    icon: HiOutlineCodeBracket,
+      "Custom AI and automation solutions that streamline operations, unlock insights, and accelerate decision-making.",
+    link: "/ai-solutions",
+    icon: HiOutlineSparkles,
   },
   {
     id: 2,
-    title: "Digital Marketing",
-    description:
-      "Data-driven digital marketing strategies including SEO, PPC, and social media to maximize ROI.",
-    link: "/digital-marketing",
-    icon: HiOutlineMegaphone,
-  },
-  {
-    id: 3,
     title: "Cloud Solutions",
     description:
       "Secure cloud infrastructure setup, migration, and management for enterprise scalability.",
@@ -40,7 +32,7 @@ const services = [
     icon: HiOutlineCloud,
   },
   {
-    id: 4,
+    id: 3,
     title: "IT Infrastructure Solutions",
     description:
       "End-to-end IT infrastructure planning, deployment, and optimization for reliable business operations.",
@@ -48,15 +40,7 @@ const services = [
     icon: HiOutlineServerStack,
   },
   {
-    id: 5,
-    title: "Software Solutions",
-    description:
-      "Custom software development solutions designed to automate workflows and scale with your business.",
-    link: "/software-solutions",
-    icon: HiOutlineCpuChip,
-  },
-  {
-    id: 6,
+    id: 4,
     title: "Security Solutions",
     description:
       "Comprehensive cybersecurity solutions including audits, monitoring, and threat protection.",
@@ -64,12 +48,28 @@ const services = [
     icon: HiOutlineShieldCheck,
   },
   {
-    id: 7,
-    title: "Wireless Solutions",
+    id: 5,
+    title: "Web Solutions",
     description:
-      "Reliable wireless network design and implementation for seamless connectivity and performance.",
-    link: "/wireless-solutions",
-    icon: HiOutlineWifi,
+      "High-performance, scalable websites and web applications built with modern frameworks to drive growth.",
+    link: "/web-solutions",
+    icon: HiOutlineCodeBracket,
+  },
+  {
+    id: 6,
+    title: "Digital Marketing",
+    description:
+      "Data-driven digital marketing strategies including SEO, PPC, and social media to maximize ROI.",
+    link: "/digital-marketing",
+    icon: HiOutlineMegaphone,
+  },
+  {
+    id: 7,
+    title: "Software Solutions",
+    description:
+      "Custom software development solutions designed to automate workflows and scale with your business.",
+    link: "/software-solutions",
+    icon: HiOutlineCpuChip,
   },
   {
     id: 8,
