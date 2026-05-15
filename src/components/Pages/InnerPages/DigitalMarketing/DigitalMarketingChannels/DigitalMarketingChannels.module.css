@@ -1,0 +1,110 @@
+.section {
+  position: relative;
+  padding: 6rem 0;
+  background: #120a18;
+  background-image:
+    radial-gradient(at 15% 20%, rgba(252, 22, 96, 0.22) 0px, transparent 45%),
+    radial-gradient(at 90% 10%, rgba(139, 92, 246, 0.2) 0px, transparent 50%),
+    radial-gradient(at 70% 85%, rgba(252, 22, 96, 0.12) 0px, transparent 55%),
+    radial-gradient(at 0% 80%, rgba(30, 58, 82, 0.35) 0px, transparent 55%);
+  overflow: hidden;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 78%);
+  pointer-events: none;
+}
+
+.glassCard {
+  position: relative;
+  border-radius: 18px;
+  padding: 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.glassCard::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    rgba(167, 139, 250, 0.35) 40%,
+    rgba(255, 255, 255, 0.06) 60%,
+    var(--secondary-color)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.glassCard:hover {
+  transform: translateY(-6px);
+  border-color: transparent;
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.45),
+    0 0 36px rgba(252, 22, 96, 0.2);
+}
+
+.glassCard:hover::before {
+  opacity: 1;
+}
+
+.iconTile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(252, 22, 96, 0.22),
+    rgba(167, 139, 250, 0.18)
+  );
+  border: 1px solid rgba(252, 22, 96, 0.35);
+  color: #fda4af;
+  transition: all 0.3s ease;
+}
+
+.glassCard:hover .iconTile {
+  background: linear-gradient(135deg, var(--primary-color), #a78bfa);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(252, 22, 96, 0.35);
+}
+
+.tagPill {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.55);
+}
