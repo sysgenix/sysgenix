@@ -2,7 +2,7 @@ import Container from "@/components/Layout/Container";
 import SectionTitle from "@/components/Layout/SectionTitle";
 import styles from "./ContactDepartments.module.css";
 import {
-  HiOutlineBriefcase,
+  HiOutlineMegaphone,
   HiOutlineLifebuoy,
   HiOutlineUsers,
   HiOutlineAcademicCap,
@@ -11,11 +11,11 @@ import {
 
 const departments = [
   {
-    icon: HiOutlineBriefcase,
-    title: "Sales & New Projects",
+    icon: HiOutlineMegaphone,
+    title: "Marketing",
     description:
-      "Exploring a new project, RFP, or technology engagement? Our sales team will route you to the right specialist.",
-    email: "sales@sysgenix.ca",
+      "Exploring a new project, RFP, or technology engagement? Our marketing team will route you to the right specialist.",
+    email: "marketing@sysgenix.ca",
     phone: "+1-639-998-0063",
   },
   {
@@ -31,7 +31,7 @@ const departments = [
     title: "Partnerships & Alliances",
     description:
       "Vendor, reseller, or strategic alliance inquiry? Let's explore how we can grow together across our ecosystem.",
-    email: "partners@sysgenix.ca",
+    email: "info@sysgenix.ca",
     phone: "+1-639-998-0063",
   },
   {

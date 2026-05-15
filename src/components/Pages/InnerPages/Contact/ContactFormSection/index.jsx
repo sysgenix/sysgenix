@@ -22,7 +22,7 @@ const services = [
   "IT Infrastructure Solutions",
   "Software Solutions",
   "Security Solutions",
-  "Wireless Solutions",
+  "AI Solutions",
   "Design & Print Solutions",
   "Other / Not Sure Yet",
 ];
@@ -53,17 +53,54 @@ const initialState = {
 export default function ContactFormSection() {
   const [form, setForm] = useState(initialState);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const onChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+    if (submitError) setSubmitError("");
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    // Form submission wiring (Resend/etc.) will be added later.
-    setSubmitted(true);
-    setForm(initialState);
-    setTimeout(() => setSubmitted(false), 5000);
+    setSubmitError("");
+    setSubmitting(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          company: form.company,
+          service: form.service,
+          message: form.message,
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setSubmitError(
+          typeof data.error === "string"
+            ? data.error
+            : "Something went wrong. Please try again."
+        );
+        return;
+      }
+
+      setSubmitted(true);
+      setForm(initialState);
+      setTimeout(() => setSubmitted(false), 8000);
+    } catch {
+      setSubmitError(
+        "Network error. Please check your connection and try again."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputBase =
@@ -257,9 +294,11 @@ export default function ContactFormSection() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="group inline-flex items-center justify-center gap-2 px-9 py-4 rounded-xl bg-[#fc1660] text-white text-[15px] font-semibold tracking-wide transition-all duration-300 hover:bg-[#1e3a52] hover:-translate-y-0.5 shadow-lg shadow-[#fc1660]/20 hover:shadow-xl hover:shadow-[#1e3a52]/20"
+                      disabled={submitting}
+                      aria-busy={submitting}
+                      className="group inline-flex items-center justify-center gap-2 px-9 py-4 rounded-xl bg-[#fc1660] text-white text-[15px] font-semibold tracking-wide transition-all duration-300 hover:bg-[#1e3a52] hover:-translate-y-0.5 shadow-lg shadow-[#fc1660]/20 hover:shadow-xl hover:shadow-[#1e3a52]/20 disabled:opacity-60 disabled:pointer-events-none disabled:hover:translate-y-0"
                     >
-                      <span>Send Message</span>
+                      <span>{submitting ? "Sending…" : "Send Message"}</span>
                       <HiOutlinePaperAirplane
                         size={18}
                         className="transition-transform duration-300 group-hover:translate-x-1 -rotate-45"
@@ -272,6 +311,15 @@ export default function ContactFormSection() {
                     </p>
                   </div>
 
+                  {submitError && (
+                    <div
+                      className="p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-sm"
+                      role="alert"
+                    >
+                      {submitError}
+                    </div>
+                  )}
+
                   {submitted && (
                     <div className="flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800">
                       <HiOutlineCheckCircle
@@ -282,8 +330,8 @@ export default function ContactFormSection() {
                         <strong className="block mb-0.5">
                           Thanks — we got your message.
                         </strong>
-                        A Sysgenix specialist will reach out shortly. Check
-                        your inbox for confirmation.
+                        A Sysgenix specialist will reach out shortly at the
+                        email address you provided.
                       </div>
                     </div>
                   )}
